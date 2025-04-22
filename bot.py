@@ -10,6 +10,8 @@ TOKEN = os.getenv('TOKEN')
 
 bot = TeleBot(token=TOKEN)
 
+
+
 @bot.message_handler(commands=['start'])
 def chat(message):
     markup = InlineKeyboardMarkup()
